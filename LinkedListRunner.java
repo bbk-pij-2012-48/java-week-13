@@ -17,10 +17,11 @@ public class LinkedListRunner {
 		while(itr.hasNext()) {
 			System.out.println(itr.next());
 		}
+		System.out.println("------------");
 		
 		char tmp;
 		while(itr.hasPrevious()) {
-			tmp = itr.toString().charAt(0);
+			tmp = itr.previous().charAt(0);
 			if(tmp=='a'||tmp=='e'||tmp=='i'||tmp=='o'||tmp=='u'){
 				itr.remove();
 			}
